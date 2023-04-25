@@ -1,12 +1,10 @@
 import numpy as np
 
 
-
 class Pilha:
     def __init__(self, capacidade):
         self.capacidade = capacidade
         self.topo = -1
-        #privando o metodo de busca de valores para se ter acesso unicamente ao topo
         self.__valores = np.chararray(self.capacidade, unicode=True)
     
     #funcao auxiliar
