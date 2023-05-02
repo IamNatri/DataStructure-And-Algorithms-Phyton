@@ -4,7 +4,7 @@ class Pilha:
     def __init__(self, capacidade):
         self.capacidade = capacidade
         self.topo = -1
-        self.__valores = np.chararray(self.capacidade, unicode=True)
+        self.valores = np.chararray(self.capacidade, unicode=True)
     
     #funcao auxiliar
     def __pilha_cheia(self):
@@ -23,18 +23,23 @@ class Pilha:
         if self.__pilha_cheia():
             print("A pilha esta cheia")
         else:
-            self.__topo += 1
-            self.__valores[self.topo] = valor
+            self.topo += 1
+            self.valores[self.topo] = valor
     
     def desempilhar(self):
         if self.pilha_vazia():
             print("A pilha esta vaiza")
+            return -1
         else:
+            valor = self.valores[self.topo]
             self.topo -= 1
+            return valor
+        
+
     
     def ver_topo(self):
         if self.topo != -1:
-            return self.__valores[self.topo]
+            return self.valores[self.topo]
         else:
             return -1
         
