@@ -82,7 +82,7 @@ class Dijkstra:
 
   def dijkstra(self):
     #retornar no vetor distancia as menores distancias possiveis 
-    distancia = [sys.maxsize] * self.tamanho
+    distancia = [sys.maxsize] * self.tamanho    
     distancia[self.inicio] = 0
     visitados = [False] * self.tamanho
 
