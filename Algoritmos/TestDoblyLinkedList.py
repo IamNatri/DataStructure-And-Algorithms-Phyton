@@ -1,0 +1,20 @@
+from implementacao.DoblyLinkedList import DLinkedList
+
+lista = DLinkedList()
+
+lista.insertBegining(0)
+lista.insertBegining(1)
+lista.insertBegining(3)
+lista.insertBegining(2)
+lista.insertBegining(4)
+#lista.printAscending()
+print('==========')
+lista.printDescending()
+print('==========')
+lista.insertEnd(8)
+lista.deletBegining()
+lista.printAscending()
+print('==========')
+lista.deletEnd()
+lista.deletAt(3)
+lista.printDescending()
