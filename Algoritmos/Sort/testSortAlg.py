@@ -3,15 +3,15 @@ import random
 import numpy as np
 import sys
 
-sys.path.append('C:\\Users\\matheusb\\Documents\\Cursos\\EstruturaDeDados-Phyton\\Algoritmos')
+sys.path.append('C:\\Users\\matheusb\\Documents\\Cursos\\EstruturaDeDados-Phyton')
 
 
 from DataStructure.VetorOrdenado import vetorOrdenado
-from BubbleSort import bubble_sort
-from InsertionSort import insertionSort
-from QuickSort import quickSort
-from SelectionSort import selection_sort
-from ShellSort import shellSort
+from Algoritmos.Sort.BubbleSort import bubble_sort
+from Algoritmos.Sort.InsertionSort import insertionSort
+from Algoritmos.Sort.QuickSort import quickSort
+from Algoritmos.Sort.SelectionSort import selection_sort
+from Algoritmos.Sort.ShellSort import shellSort
 
 arr = np.array([random.random() for _ in range(5000)])
 
